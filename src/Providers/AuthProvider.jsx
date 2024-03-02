@@ -30,6 +30,10 @@ const AuthProvider = ({ children }) => {
 
     //google signIn
 
+    // const googleSignIn = () => {
+    //     setLoading(true);
+    //     return signInWithPopup(auth, googleProvider);
+    // }
     const googleSignIn = () => {
         setLoading(true);
         return signInWithPopup(auth, googleProvider);
@@ -59,15 +63,16 @@ const AuthProvider = ({ children }) => {
                     .then(res => {
                         if (res.data.token) {
                             localStorage.setItem('access-token', res.data.token);
-                            setLoading(false);
+                            // setLoading(false);
                         }
                     })
             }
             else {
                 // TODO: remove token (if token stored in the client side: Local storage, caching, in memory)
                 localStorage.removeItem('access-token');
-                setLoading(false);
+
             }
+            setLoading(false);
 
         });
         return () => {
