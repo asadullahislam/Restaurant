@@ -29,7 +29,7 @@ const PaymentHistory = () => {
                             <th>Status</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody className="text-balck">
                         {payments.map((payment, index) => <tr key={payment._id}>
                             <th>{index + 1}</th>
                             <td>${payment.price}</td>
