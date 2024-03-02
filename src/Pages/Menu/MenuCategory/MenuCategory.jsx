@@ -6,7 +6,14 @@ import MenuItem from "../../Shared/MenuItem/MenuItem";
 const MenuCategory = ({ items, title, img }) => {
     return (
         <div className="pt-8">
-            {title && <Cover img={img} title={title}></Cover>}
+            <div>
+                {title &&
+                    <div>
+                        <img src={img} title={title} alt="" />
+                    </div>
+                }
+
+            </div>
 
             <div className='grid md:grid-cols-2 gap-8 my-16'>
                 {

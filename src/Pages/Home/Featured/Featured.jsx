@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import SectionTitle from "../../../Components/SectionTitles/SectionTitle";
 import FeaturedImg from '../../../assets/home/featured.jpg'
 import './Featured.css'
@@ -16,8 +17,8 @@ const Featured = () => {
                 <div className="md:ml-10 text-white">
                     <p>Aug 20, 2020</p>
                     <p className="upercase">Where can i get some ?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae numquam similique odit earum illo? Voluptatem, officia placeat ab sint, quae nesciunt deserunt in, a cum at consequuntur error magni perspiciatis?</p>
-                    <button className="btn text-2xl btn-outline border-0 border-b-4 mt-4">Order Now </button>
+                    <p>In less than 5 minutes you could unlock low-cost food ordering and delivery for your business. There are no strings attached and you can cancel at any time.</p>
+                    <button className="btn text-2xl btn-outline border-0 border-b-4 mt-4"><Link to='order/:category'>Order Now</Link> </button>
                 </div>
             </div>
         </div>

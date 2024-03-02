@@ -5,6 +5,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import Swal from 'sweetalert2'
 import SocialLogin from '../../Components/SocialLogin/SocialLogin';
+import authentication from '../../assets/others/authentication.gif'
 
 const Login = () => {
 
@@ -84,8 +85,8 @@ const Login = () => {
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className="text-center md:w-1/2 lg:text-left">
-                        <h1 className="text-5xl font-bold">Login now!</h1>
-                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <h1 className="text-5xl m-10 font-bold">Login now!</h1>
+                        <img className='rounded-lg shadow-2xl' src={authentication} alt="" />
                     </div>
                     <div className="card md:w-1/2 w-full max-w-sm shadow-2xl bg-base-100">
                         <form onSubmit={handleLogin} className="card-body">
@@ -113,10 +114,10 @@ const Login = () => {
 
                             </div>
 
-                            \\ TODO : apply disabled for recaptcha
 
-                            <input type="Submit" disabled={false} className="btn btn-primary" value="Login" />
-                            <p className='px-6'><small>New Here? <Link to="/signup">Create an account</Link></small></p>
+
+                            <input type="Submit" disabled={disabled} className="btn btn-primary" value="Login" />
+                            <p className='px-6'><small>New Here? <Link to="/signup" className='underline text-xl font-bold' >Create an account</Link></small></p>
                         </form>
                         <SocialLogin></SocialLogin>
 

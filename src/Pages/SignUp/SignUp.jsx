@@ -6,6 +6,7 @@ import { AuthContext } from "../../Providers/AuthProvider";
 import Swal from "sweetalert2";
 import useAxiosPublic from "../../Hooks/useAxiosPublic";
 import SocialLogin from "../../Components/SocialLogin/SocialLogin";
+import authntication1 from '../../assets/others/authentication.gif'
 
 
 
@@ -64,8 +65,8 @@ const SignUp = () => {
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className="text-center md:w-1/2 lg:text-left">
-                        <h1 className="text-5xl font-bold">SignUp Now </h1>
-                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <h1 className="text-5xl font-bold m-10">SignUp Now </h1>
+                        <img className="rounded-lg shadow-2xl" src={authntication1} alt="" />
                     </div>
                     <div className="card md:w-1/2 w-full max-w-sm shadow-2xl bg-base-100">
                         <form onSubmit={handleSubmit(onSubmit)} className="card-body">
@@ -112,7 +113,7 @@ const SignUp = () => {
                             </div>
                             <input type="Submit" className="btn btn-primary" value="Sign Up" />
 
-                            <p className="px-6"><small>Already have an account? <Link to="/login" className="underline">Login</Link></small></p>
+                            <p className="px-6"><small>Already have an account? <Link to="/login" className="underline text-2xl font-bold">Login</Link></small></p>
 
                         </form>
                         <SocialLogin></SocialLogin>

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Helmet } from 'react-helmet-async';
 import Cover from '../../Shared/Cover/Cover';
 import menuImg from '../../../assets/menu/banner3.jpg'
@@ -7,11 +7,11 @@ import pizzaImg from '../../../assets/menu/pizza-bg.jpg'
 import soupImg from '../../../assets/menu/soup-bg.jpg';
 import saladImg from '../../../assets/menu/salad-bg.jpg';
 
-import PopularMenu from '../../Home/PopularMenu/PopularMenu';
 
 import useMenu from '../../../Hooks/useMenu';
 import SectionTitle from '../../../Components/SectionTitles/SectionTitle';
 import MenuCategory from '../MenuCategory/MenuCategory';
+import './menu.css'
 
 
 
@@ -30,6 +30,7 @@ const Menu = () => {
                 <title>Boss | Menu</title>
             </Helmet>
             {/* Main Cover  */}
+
 
             <Cover img={menuImg} title="Our Menu"></Cover>
 
