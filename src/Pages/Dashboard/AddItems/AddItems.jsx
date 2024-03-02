@@ -8,11 +8,8 @@ import Swal from "sweetalert2";
 const image_hosting_key = import.meta.env.VITE_IMAGE_HOSTING_KEY;
 const image_hosting_api = `https://api.imgbb.com/1/upload?key=${image_hosting_key}`;
 
-
 const AddItems = () => {
-
     const { register, handleSubmit, reset } = useForm();
-
     const axiosPublic = useAxiosPublic();
     const axiosSecure = useAxiosSecure();
     const onSubmit = async (data) => {
@@ -24,7 +21,6 @@ const AddItems = () => {
                 'content-type': 'multipart/form-data'
             }
         });
-        console.log(res.data);
         if (res.data.success) {
             // now send the menu item data to the server with the image url
             const menuItem = {
@@ -51,6 +47,7 @@ const AddItems = () => {
         }
         console.log('with image url', res.data);
     };
+
     return (
         <div>
             <SectionTitle heading="add an item" subHeading="What's new?" ></SectionTitle>
