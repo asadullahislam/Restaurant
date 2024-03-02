@@ -34,9 +34,9 @@ const Dashboard = () => {
                                     Manage Items</NavLink>
                             </li>
                             <li>
-                                <NavLink className='text-black' to="/dashboard/bookings">
+                                <NavLink className='text-black' to="/dashboard/paymentHistory">
                                     <FaBook></FaBook>
-                                    Manage Bookings</NavLink>
+                                    PaymentHistory</NavLink>
                             </li>
                             <li>
                                 <NavLink className='text-black' to="/dashboard/users">
