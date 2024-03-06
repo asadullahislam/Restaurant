@@ -32,7 +32,10 @@ const Menu = () => {
             {/* Main Cover  */}
 
 
-            <Cover img={menuImg} title="Our Menu"></Cover>
+            {/* <Cover img={menuImg} title="Our Menu"></Cover> */}
+            <div>
+                <img src={menuImg} alt="" />
+            </div>
 
             <SectionTitle subHeading="Don't Miss" heading="Today's offer "></SectionTitle>
 

@@ -97,7 +97,7 @@ const CheckoutForm = () => {
                     Swal.fire({
                         position: "top-end",
                         icon: "success",
-                        title: "Thank you for the taka paisa",
+                        title: "Thank you for the payment",
                         showConfirmButton: false,
                         timer: 1500
                     });
