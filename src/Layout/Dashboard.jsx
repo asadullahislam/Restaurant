@@ -18,11 +18,11 @@ const Dashboard = () => {
                 <ul className="menu p-4">
                     {
                         isAdmin ? <>
-                            {/* <li>
+                            <li>
                                 <NavLink className='text-black' to="/dashboard/adminHome">
                                     <FaHome></FaHome>
                                     Admin Home</NavLink>
-                            </li> */}
+                            </li>
                             <li>
                                 <NavLink className='text-black' to="/dashboard/addItems">
                                     <FaUtensils></FaUtensils>
@@ -47,7 +47,7 @@ const Dashboard = () => {
                             :
                             <>
                                 <li>
-                                    <NavLink className='text-black' to="/">
+                                    <NavLink className='text-black' to="/dashboard/userHome">
                                         <FaHome></FaHome>
                                         User Home</NavLink>
                                 </li>
