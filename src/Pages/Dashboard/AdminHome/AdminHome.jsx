@@ -16,6 +16,7 @@ const AdminHome = () => {
 
         }
     })
+    // console.log(stats.user)
     return (
         <div>
             <h2 className="text-3xl">
