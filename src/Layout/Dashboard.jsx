@@ -51,25 +51,25 @@ const Dashboard = () => {
                                         <FaHome></FaHome>
                                         User Home</NavLink>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <NavLink className='text-black' to="/dashboard/history">
                                         <FaCalendar></FaCalendar>
                                         Reservation</NavLink>
-                                </li>
+                                </li> */}
                                 <li>
                                     <NavLink className='text-black' to="/dashboard/cart">
                                         <FaShoppingCart></FaShoppingCart>
                                         My Cart ({cart.length})</NavLink>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <NavLink className='text-black' to="/dashboard/review">
                                         <FaAd></FaAd>
                                         Add a Review</NavLink>
-                                </li>
+                                </li> */}
                                 <li>
                                     <NavLink className='text-black' to="/dashboard/paymentHistory">
                                         <FaList></FaList>
-                                        Payment Real History</NavLink>
+                                        Payment History</NavLink>
                                 </li>
                             </>
                     }
