@@ -93,7 +93,7 @@ const Dashboard = () => {
                 </ul>
             </div>
             {/* dashboard content */}
-            <div className="flex-1 p-8">
+            <div className="sm:w-3/4 flex-1 p-8">
                 <Outlet></Outlet>
             </div>
         </div>
