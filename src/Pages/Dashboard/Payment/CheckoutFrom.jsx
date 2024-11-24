@@ -149,6 +149,13 @@ const CheckoutForm = () => {
           </Link>
         </button>
       </div>
+      <div className="text-center  tex-2xl font-bold  my-10 border mx-10 p-5 shadow-sm ">
+        <button className="btn btn-outline btn-primary text-2xl pyy-2">
+          <Link to="/sslcommerz" state={{ totalPrice }}>
+            Payment In Sslcommerz
+          </Link>
+        </button>
+      </div>
     </div>
   );
 };

@@ -41,13 +41,16 @@ const PaymentWithCOD = () => {
 
     // Call API to store data in the database
     try {
-      const response = await fetch("http://localhost:5000/orders", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://restaurant-server-sepia.vercel.app/orders",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
       const result = await response.json();
 
       if (response.ok) {

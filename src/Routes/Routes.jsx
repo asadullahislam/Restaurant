@@ -20,6 +20,10 @@ import UserHome from "../Pages/Dashboard/UserHome/UserHome";
 import AdminHome from "../Pages/Dashboard/AdminHome/AdminHome";
 import FoodCardDetails from "../Components/FoodCard/FoodCardDetails";
 import PaymentWithCOD from "../Pages/Dashboard/Payment/PaymentWithCOD/PaymentWithCOD";
+import PaymentWithSSLcommerz from "../Pages/Dashboard/Payment/PaymentWithSSLcommerz/PaymentWithSSLcommerz";
+import PaymentSuccess from "../Pages/Dashboard/Payment/PaymentWithSSLcommerz/PaymentSuccess";
+import PaymentFailed from "../Pages/Dashboard/Payment/PaymentWithSSLcommerz/PaymentFailed";
+import ContactUs from "../Components/ContactUs/ContactUs";
 
 export const router = createBrowserRouter([
   {
@@ -44,6 +48,14 @@ export const router = createBrowserRouter([
         element: <Login></Login>,
       },
       {
+        path: "payment/success/:tranId",
+        element: <PaymentSuccess></PaymentSuccess>,
+      },
+      {
+        path: "payment/fail/:tranId",
+        element: <PaymentFailed></PaymentFailed>,
+      },
+      {
         path: "food/:_id",
         element: <FoodCardDetails></FoodCardDetails>,
         loader: ({ params }) =>
@@ -56,6 +68,14 @@ export const router = createBrowserRouter([
       {
         path: "COD",
         element: <PaymentWithCOD></PaymentWithCOD>,
+      },
+      {
+        path: "contactUs",
+        element: <ContactUs></ContactUs>,
+      },
+      {
+        path: "/sslcommerz",
+        element: <PaymentWithSSLcommerz></PaymentWithSSLcommerz>,
       },
       {
         path: "secret",

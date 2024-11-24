@@ -59,7 +59,7 @@ const FoodCardDetails = () => {
       createdAt: new Date().toISOString(),
     };
 
-    fetch("http://localhost:5000/comments", {
+    fetch("https://restaurant-server-sepia.vercel.app/comments", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -28,6 +28,9 @@ const NavBar = () => {
       <li className="font-bold text-xl text-black">
         <Link to="/order/salad">Order Food</Link>
       </li>
+      <li className="font-bold text-xl text-black">
+        <Link to="/contactUs">ContactUs</Link>
+      </li>
       {/* add after when problem then removed */}
       {/* {
             // user ? 'true': 'false'
