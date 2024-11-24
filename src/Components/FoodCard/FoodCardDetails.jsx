@@ -22,7 +22,7 @@ const FoodCardDetails = () => {
 
   // Fetch existing comments from the server when the component mounts
   useEffect(() => {
-    fetch(`http://localhost:5000/comments/${_id}`) // Change to match server endpoint
+    fetch(`https://restaurant-server-sepia.vercel.app/comments/${_id}`) // Change to match server endpoint
       .then((res) => res.json())
       .then((data) => setComments(data))
       .catch((err) => console.error("Error fetching comments:", err));

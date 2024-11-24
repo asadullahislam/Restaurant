@@ -173,7 +173,7 @@ const PaymentForm = () => {
             type="submit"
             className="w-full bg-red-500 text-white py-2 px-4 rounded-md hover:bg-red-600 transition duration-300"
           >
-            Pay Now
+            Payment Now
           </button>
         </form>
       </div>
