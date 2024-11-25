@@ -37,7 +37,7 @@ const ContactUs = () => {
         className="bg-white p-8 rounded-lg shadow-2xl w-full max-w-lg transform hover:scale-105 transition-transform duration-300"
       >
         <h2 className="text-3xl font-bold mb-6 text-indigo-600 text-center">
-          Get in Touch
+          Contact Us
         </h2>
         <p className="text-center text-gray-600 mb-8">
           We'd love to hear from you! Please fill out the form below, and we'll
